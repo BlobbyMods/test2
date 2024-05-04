@@ -1,0 +1,24 @@
+name: test2
+version: '{0.2-BETA}'
+main: org.cloudns.danng.test2
+api-version: '1.20'
+prefix: <ohhTest>
+author: Danng
+website: dang.cloudns.org
+permissions:
+  danng.test:
+    description: "This is a ultra test permission node"
+    default: false
+commands:
+  command:
+    description: "Ding-dong"
+    usage: "/ultratest"
+    aliases: [ ut, test ]
+    permission: danng.test
+    permission-message: "You do not have permission to use this command"
+dependencies:
+  server:
+    TypeWriter:
+      load: BEFORE
+      required: false
+      join-classpath: true

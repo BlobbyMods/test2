@@ -1,0 +1,6 @@
+Main:
+    Toggles:
+        Adapters: False
+    Messages:
+        Main message: "Server starting..."
+        Adapter Config Disabled: "The config"
